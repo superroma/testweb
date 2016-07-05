@@ -1,1 +1,164 @@
+.panels {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+@font-face {
+  font-family: 'Roboto'
+  src: url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-left, margin-right: 30px;
+}
+.sidebar-left {
+  width: 5%;
+}
+.content {
+  margin-left: 5%;
+  width: 90%;
+}
+.bar {
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 5px;
+}
+.title {
+  width: 100%;
+  order: -1;
+}
+.control-buttons {
+  margin-left: auto;
+}
+.btn-primary, .btn-success {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.btn-default {
+}
+.panel {
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom:5px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  min-width:200px;
+  flex-basis: content;
+
+}
+
+.longwidget {
+  width: 100%;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom:5px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  border-radius:5px;
+  border-width:1px;
+}
+.longwidget .form-control {
+  margin-bottom: 10%;
+  max-width: 200px;
+}
+.widget {
+  width: 100%;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom:5px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  border-radius:5px;
+  border-width:1px;
+}
+.widget:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+/* half height elements
+
+.smallwidget {
+  width: 100%;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom:5px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  border-radius:5px;
+  border-width:1px;
+
+}
+.fortwo {
+  width: 100%;
+  margin-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow:1;
+  max-height: 250px;
+}
+*/
+/* Typography */
+
+h1 {
+	font-weight: 300;
+  font-size: 20pt;
+	flex: 1;
+  text-align: center;
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 150px;
+}
+h4 {
+  font-size: 20;
+}
+h5 {
+  padding-top: 10%;
+  font-size: 20;
+	font-weight: 500;
+
+}
+
+h6 {
+	color: #666;
+	font-size: 14px;
+}
+
+
+@media screen and (min-width: 500px) {
+  .widget {
+    max-width: calc(50% - 5px);
+  }
+  .fortwo {
+    max-width: calc(50% - 5px);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .widget {
+    max-width: calc(25% - 5px);
+  }
+  .fortwo {
+    max-width: calc(25% - 5px);
+  }
+  .title {
+    width:auto;
+    order:0;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .widget {
+    max-width: calc(20% - 5px);
+  }
+  .fortwo {
+    max-width: calc(25% - 5px);
+  }
+}

@@ -1,0 +1,167 @@
+.panels {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@font-face {
+  font-family: 'Roboto'
+  src: url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 30px auto;
+}
+
+.content {
+  padding-left: 5%;
+  width: 95%;
+  text-align: center;
+}
+
+/* Control Panels */
+
+.panel {
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom:5px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  min-width:144px;
+
+}
+.panel .form-control {
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-bottom:20%;
+}
+.widgets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.widgets p {
+  width:100%
+}
+.widget {
+  display: flex;
+  flex-wrap: wrap;
+}
+.widget a {
+  display: flex;
+  flex-wrap: wrap;
+}
+.widget > h5 {
+  flex: 0 1 100%;
+}
+.widget h5 {
+
+}
+.img {
+ width: 100%;
+ text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .widgets {
+    justify-content: space-between;
+
+  }
+  a.container {
+    width: 49%;
+
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .img {
+    width:150px;
+  }
+  .widget p {
+    width: calc(100% - 155px);
+  }
+}
+
+/*Widget settings*/
+.form-control {
+  margin-left: 10%;
+  margin-right: 19%;
+}
+}
+ .input-group {
+  display: flex;
+}
+.setting {
+  display: flex;
+  justify-content:center;
+
+}
+
+
+.content .setting p {
+}
+.variables {
+  width: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.variables h2, .special h2 {
+  font-size: 16pt;
+}
+.variable {
+  margin: 2px;
+}
+.variable h3 {
+  font-size: 14pt;
+  float:left;
+  font-weight: normal;
+  color:gray;
+}
+.content .variable p {
+  text-align: left;
+padding-left: 35%;
+}
+.form-control {
+  max-width: 200px;
+}
+.values {
+  display: flex;
+  margin: 5px;
+  margin-left: 30%;
+}
+.range-selector {
+  display: flex;
+  margin-left: 30%;
+}
+.special {
+  margin: 15px;
+}
+/* Typography */
+
+h1 {
+	font-weight: 300;
+  font-size: 20pt;
+	flex: 1;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+h5 {
+  font-size: 20;
+	font-weight: 500;
+	line-height: 1.5em;
+  text-align: center;
+
+}
+.content p {
+  text-align: center;
+  margin-left: 5px;
+}
