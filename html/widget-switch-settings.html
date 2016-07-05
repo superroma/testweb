@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cloud4RPI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Loading Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Loading Flat UI -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css" rel="stylesheet">
+    <link href="control-panels-styles.css" rel="stylesheet">
+
+<body>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="#">Cloud4RPI</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="controlpanels.html">Control Panels</a></li>
+          <li><a href="devices.html">Devices</a></li>
+          <li><a href="#contact">Docs</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="./">Login</a></li>
+          <li><a href="../navbar-fixed-top/">Register</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="content">
+    <h1>Widget settings</h1>
+    <div class="form-group">
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Widget name">
+    </div>
+    <div class="variables">
+      <h2>Variables</h2>
+      <div class="variable">
+        <h3>Home</h3>
+        <p>current_temp</p>
+        <p>light</p>
+        <p>door_indicator</p>
+        </div>
+        <div class="variable">
+          <h3>Garage</h3>
+          <p>volume</p>
+          <p>door_indicator</p>
+          <p>movement</p>
+          </div>
+          <div class="variable">
+            <h3>Meteorological station</h3>
+            <p>current_temp</p>
+            <p>humidity</p>
+            <p>wind_speed</p>
+              <p>wind_direction</p>
+              <p>pressure</p>
+            </div>
+            <div class="variable">
+              <h3>Test Device</h3>
+              <p>light_picker</p>
+              <p>sound_recorder</p>
+              <p>note_taker</p>
+              <p>field_recorder</p>
+              </div>
+
+      </div>
+      <div class="special">
+    <div class="range-selector">
+    <p>On state label: </p>
+    <input class="form-control">
+  </div>
+  <div class="range-selector">
+  <p>Off state label: </p>
+  <input class="form-control">
+</div>
+
+</div>
+
+<a href="controlpanel.html"
+  <button type="button" class="btn btn-success">Save</button>
+</a>
+
+  </div>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.js"></script>
