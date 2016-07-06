@@ -58,10 +58,13 @@
   </div>
     <div class="panels">
       <a href="widget-chart-settings.html" class="longwidget">
-        <h2>chart</h2>
+        <h2>Chart</h2>
       </a>
       <a href="#" class="widget">
-        <h5>gauge</h5>
+        <h5>Gauge</h5>
+        <div class="widget-footer">
+          <p> 4:25pm 6/20</p>
+        </div>
       </a>
       <a href="#" class="widget">
         <div class="widget-head">
@@ -86,9 +89,23 @@
       <script type="text/javascript">
       $('#ex1').slider({
 formatter: function(value) {
+  $('#ex1').on('slide',function () {
+    document.getElementById("slider_value").style.fontSize = "20pt";
+    document.getElementById("slider_value").style.color = "#e2e2e2"
+    document.getElementById("slider_value").textContent = "Sending:" + value;
+    setTimeout(function() {
+      document.getElementById("slider_value").style.fontSize = "20pt";
+      document.getElementById("slider_value").style.color = "#16a085"
+      document.getElementById("slider_value").textContent = value;
+  }, 2000);
+
+
+});
+
   return 'Current value: ' + value;
 }
 });
+
 </script>
     </div>
     <div class="widget-footer">
@@ -96,7 +113,7 @@ formatter: function(value) {
     </div>
       </a>
       <a href="#" class="widget">
-        <h5>number</h5>
+        <h5>Number</h5>
       </a>
       <a href="#" class="widget">
         <div class="widget-head">
