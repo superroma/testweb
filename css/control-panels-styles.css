@@ -97,6 +97,9 @@ body {
 .widget-setting-group {
   display: flex;
 }
+.widget-setting-label, .widget-setting {
+  margin: 10px;
+}
 .widget-setting-label {
   margin-left: 20%;
 }
@@ -138,13 +141,7 @@ padding-left: 35%;
   margin: 5px;
   margin-left: 30%;
 }
-.range-selector {
-  display: flex;
-  margin-left: 30%;
-}
-.special {
-  margin: 15px;
-}
+
 /* Typography */
 
 h1 {
