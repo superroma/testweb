@@ -30,11 +30,6 @@ body {
   min-width:144px;
 
 }
-.panel .form-control {
-  margin-left: 15%;
-  margin-top: 10%;
-  margin-bottom:20%;
-}
 .widgets {
   display: flex;
   flex-wrap: wrap;
@@ -56,8 +51,8 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.widget > h5 {
-  flex: 0 1 100%;
+.widget h5 {
+  margin-top: 5px;
 }
 .widget h5 {
 
@@ -89,11 +84,8 @@ body {
 }
 
 /*Widget settings*/
-.form-control {
-  margin-left: 10%;
-  margin-right: 19%;
-}
-}
+
+
  .input-group {
   display: flex;
 }
@@ -102,9 +94,19 @@ body {
   justify-content:center;
 
 }
+.widget-setting-group {
+  display: flex;
+}
+.widget-setting-label {
+  margin-left: 20%;
+}
+.widget-setting {
+  position: absolute; right: calc(45% - (18.75em)/2); width: 18.75em;
+  text-align: left;
 
-
-.content .setting p {
+}
+.combobox {
+  width: 200px;
 }
 .variables {
   width: 50%;

@@ -65,15 +65,52 @@ body {
 }
 .widget {
   width: 100%;
-  text-align: center;
   margin-right: 5px;
   margin-bottom:5px;
   border-style: solid;
   border-color: black;
-  padding: 20px;
   border-radius:5px;
   border-width:1px;
 }
+.widget h5 {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 0px;
+  color: gray;
+  font-size: 16pt;
+}
+.widget h4 {
+  margin-top: 5px;
+  font-size: 20pt;
+  margin-right: 20px;
+}
+.widget-head {
+  display: flex;
+  justify-content: space-between;
+}
+.widget-body {
+  margin-top: 20%;
+  text-align: center;
+}
+.widget-footer {
+  clear:both;
+  text-align: center;
+}
+.widget-footer p {
+  color:transparent;
+
+}
+.widget:hover .widget-footer p {
+color:gray;
+}
+.widget input {
+  margin-left:5%;
+  margin-right:5%;
+  width: 90%;
+}
+
+
+
 .widget:before {
     content:'';
     float:left;
