@@ -1,6 +1,7 @@
 .panels {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 @font-face {

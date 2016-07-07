@@ -19,7 +19,22 @@ body {
 }
 
 /* Control Panels */
+.bar {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
 
+}
+.no-show {
+  display: none;
+}
+.no-visible {
+    visibility: hidden;
+}
+.title {
+  margin-right: auto;
+  margin-left: auto;
+}
 .panel {
   text-align: center;
   margin-right: 5px;
@@ -29,12 +44,20 @@ body {
   padding: 10px;
   min-width:144px;
 
+  display: flex;
+  flex-direction: column;
+
+}
+.panel h5 {
+  min-height: 3em;
+}
+.panel p {
+    margin-top: auto;
 }
 .widgets {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-style: solid;
   border-width: 1px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -55,7 +78,10 @@ body {
   margin-top: 5px;
 }
 .widget h5 {
-
+    width: 100%;
+}
+.widget p {
+  color: black;
 }
 .img {
  width: 100%;
@@ -96,20 +122,38 @@ body {
 }
 .widget-setting-group {
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 .widget-setting-label, .widget-setting {
-  margin: 10px;
 }
 .widget-setting-label {
+  color: rgba(0, 0, 0, 0.54);
   margin-left: 20%;
 }
 .widget-setting {
-  position: absolute; right: calc(45% - (18.75em)/2); width: 18.75em;
-  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 
 }
-.combobox {
-  width: 200px;
+.right-setting {
+  visibility: hidden;
+  margin-right: 20%;
+}
+.right-setting-show {
+  margin-right: 20%;
+}
+.text {
+  margin-top: 10%;
+
+}
+
+.text p {
+  margin-top: 20px;
+}
+
+.settings {
+  margin-top: 5%;
 }
 .variables {
   width: 50%;
