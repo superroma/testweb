@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Cloud4RPI</title>
+    <title>Cntrlpnl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Loading Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Loading Flat UI -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css" rel="stylesheet">
     <link href="../css/control-panels-styles.css" rel="stylesheet">
-      <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 <body>
   <div class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
@@ -17,7 +17,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
         </button>
-        <a class="navbar-brand" href="landing.html">Cloud4RPI</a>
+        <a class="navbar-brand" href="landing.html">Ctrlpnl</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -32,84 +32,68 @@
     </div>
   </div>
   <div class="content">
+
+    <div class="notification">
+      <p>Welcome to Ctrlpnl! Got your fancy little device up and running? Connected some sensors and lights and whatnot? Now let's take your interest up a notch - move your stuff online! Let's start with adding your first device.  </p>
+    </div>
     <div class="bar">
-      <a href="devices.html">
-      <button type="button" class="btn btn-primary">Back</button>
+      <a href="controlpanels.html">
+      <button type="button" class="btn btn-primary no-show">Back</button>
     </a>
       <div class="title">
-    <h1>Device settings</h1>
+    <h1>Add Device</h1>
   </div>
     <div class="control-buttons">
-      <a href="new-widget.html">
-      <button type="button" class="btn btn-primary no-show">Add Widget</button>
+      <a href="new-device.html">
+      <button type="button" class="btn btn-primary no-show">New Device</button>
     </a>
-    <a href="edit-controlpanel.html"
-      <button type="button" class="btn btn-primary no-visible">Edit</button>
+    <a href="edit-devices.html"
+      <button type="button" class="btn btn-primary no-show">Edit</button>
     </a>
+    </div>
+  </div>
+<div class="settings">
+    <div class="widget-setting-group">
+    <div class="widget-setting-label">
+      <p>Name</p>
+    </div>
+    <div class="widget-setting">
+      <p>My First Device</p>
+    </div>
+    <div class="right-setting">
+        <p>Name</p>
     </div>
   </div>
   <div class="widget-setting-group">
   <div class="widget-setting-label">
-    <p>Name</p>
+    <p> Status</p>
   </div>
   <div class="widget-setting">
-    <p>My First Device</p>
+    <p>Not Connected</p>
   </div>
   <div class="right-setting">
-      <p>Name</p>
+      <p>Status</p>
   </div>
 </div>
-<div class="status">
-<div class="widget-setting-group">
-<div class="widget-setting-label">
-  <p> Status</p>
+  <div class="widget-setting-group">
+    <div class="widget-setting-label">
+  <p>Device Token</p>
 </div>
 <div class="widget-setting">
-  <p>Connected</p>
+  <p> d1b43970-8a0c-4a40-b569-126e346a5db3 </p>
 
 </div>
 <div class="right-setting-show">
-  <p>2 minutes ago 192.168.1.10</p>
-  <p></p>
+      <button type="button" class="btn btn-primary">Get another</button>
 </div>
 </div>
 </div>
-<div class="widget-setting-group">
-  <div class="widget-setting-label">
-<p>Device Token</p>
+<div class="text">
+  <p> To connect a new device, you can get Ctrlpnl   client library on one of the following platforms: </p>
+  <a href="#" >Raspberry Pi (Python)</a>
+  <p>Check out <a href ="#">API Docs</a> for general information on how to set up an interaction with our server.</p>
+  <a href="new-device-connected.html">[when device connects, user is taken further]</a>
 </div>
-<div class="widget-setting">
-<p> d1b43970-8a0c-4a40-b569-126e346a5db3 </p>
-
-</div>
-<div class="right-setting-show">
-    <button type="button" class="btn btn-primary">Get another</button>
-</div>
-</div>
-<div class="widget-setting-group">
-<div class="widget-setting-label">
-  <p>Variables</p>
-</div>
-<div class="widget-setting">
-</div>
-<div class="right-setting">
-    <p>Variables</p>
-</div>
-</div>
-<div class="widget-setting-group">
-<div class="widget-setting-label">
-  <p>Diagnostic Information</p>
-</div>
-<div class="widget-setting">
-</div>
-<div class="right-setting">
-    <p>Diagnostic Information</p>
-</div>
-</div>
-
-
-
-
 
   </div>
 </body>
