@@ -1,6 +1,7 @@
 .panels {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @font-face {
@@ -16,6 +17,21 @@ body {
   padding-left: 5%;
   width: 95%;
   text-align: center;
+}
+.notification {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+/* Device*/
+.data-unit h6 {
+  font-size: 12pt;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 0px;
+}
+.data-unit p {
+  margin-bottom: 0px;
 }
 
 /* Control Panels */
@@ -88,10 +104,13 @@ body {
  text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 680px) {
   .widgets {
     justify-content: space-between;
 
+  }
+  .panels {
+    justify-content: flex-start;
   }
   a.container {
     width: 49%;
@@ -125,7 +144,9 @@ body {
   justify-content: space-around;
   margin-bottom: 20px;
 }
-.widget-setting-label, .widget-setting {
+.left-setting {
+  margin-left: 20%;
+  visibility: hidden;
 }
 .widget-setting-label {
   color: rgba(0, 0, 0, 0.54);
@@ -136,12 +157,27 @@ body {
   margin-right: auto;
 
 }
+
+.notification {
+  margin-bottom: 20px;
+}
 .right-setting {
   visibility: hidden;
   margin-right: 20%;
 }
 .right-setting-show {
   margin-right: 20%;
+}
+.status .right-setting-show{
+  margin-left: -20%;
+  margin-right: 30%;
+  display:flex;
+  height: 100%;
+}
+.status .right-setting-show p {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12pt;
+    padding-bottom: 0px;
 }
 .text {
   margin-top: 10%;

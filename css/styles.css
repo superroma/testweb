@@ -1,6 +1,7 @@
 .panels {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 
 }
 
@@ -28,6 +29,12 @@ body {
   width: 100%;
   order: -1;
 }
+.no-show {
+  display: none;
+}
+.no-visible {
+    visibility: hidden;
+}
 .control-buttons {
   margin-left: auto;
 }
@@ -50,15 +57,21 @@ body {
 }
 
 .longwidget {
-  width: 100%;
+  width: 300px;
   text-align: center;
   margin-right: 5px;
+  margin-left: 5px;
   margin-bottom:5px;
   border-style: solid;
   border-color: #e2e2e2;
   padding: 20px;
   border-radius:5px;
   border-width:1px;
+}
+
+.widget .glyphicon, .longwidget .glyphicon {
+  color: black;
+  margin-left: 95%;
 }
 
 .longwidget:hover, .widget:hover {
@@ -69,7 +82,8 @@ body {
 }
 
 .widget {
-  width: 100%;
+  width: 300px;
+  height:300px;
   margin-right: 5px;
   margin-bottom:5px;
   border-style: solid;
@@ -115,8 +129,8 @@ color:gray;
   margin-left: calc(100% - 50px);
 }
 .widget img {
-  margin-top: calc(100% - 20px);
-  margin-left: calc(100% - 30px);
+  margin-top: calc(150px);
+  margin-left: calc(240px);
 }
 .widget input {
   margin-left:5%;
@@ -124,8 +138,28 @@ color:gray;
   width: 90%;
 }
 
+@media screen and (min-width: 680px) {
+  .title {
+    order:0;
+    width:auto;
+    margin-left: auto;
+  }
+  .longwidget, .bar {
+    width: 605px;
 
+  }
+}
 
+@media screen and (min-width: 1018px) {
+  .longwidget, .bar {
+    width: 910px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .longwidget, .bar {
+    width: 1215px;
+  }
+}
 .widget:before {
     content:'';
     float:left;
@@ -181,36 +215,4 @@ h5 {
 h6 {
 	color: #666;
 	font-size: 14px;
-}
-
-
-@media screen and (min-width: 500px) {
-  .widget {
-    max-width: calc(50% - 5px);
-  }
-  .fortwo {
-    max-width: calc(50% - 5px);
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .widget {
-    max-width: calc(25% - 5px);
-  }
-  .fortwo {
-    max-width: calc(25% - 5px);
-  }
-  .title {
-    width:auto;
-    order:0;
-    margin-left: auto;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .widget {
-    max-width: calc(20% - 5px);
-  }
-  .fortwo {
-    max-width: calc(25% - 5px);
-  }
 }
