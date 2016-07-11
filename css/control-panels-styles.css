@@ -25,6 +25,10 @@ body {
 }
 
 /* Device*/
+
+#variables, #diagnostic {
+  margin-top: 50px;
+}
 .data-unit h6 {
   font-size: 12pt;
   color: rgba(0, 0, 0, 0.54);
@@ -33,6 +37,7 @@ body {
 .data-unit p {
   margin-bottom: 0px;
 }
+
 
 /* Control Panels */
 .bar {
@@ -129,7 +134,9 @@ body {
 }
 
 /*Widget settings*/
-
+.title {
+  margin-bottom: 20px;
+}
 
  .input-group {
   display: flex;

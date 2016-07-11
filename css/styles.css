@@ -58,9 +58,7 @@ body {
 
 .longwidget {
   width: 300px;
-  text-align: center;
-  margin-right: 5px;
-  margin-left: 5px;
+  text-align: left;
   margin-bottom:5px;
   border-style: solid;
   border-color: #e2e2e2;
@@ -95,6 +93,16 @@ body {
 .widget h5 {
   margin-left: 10px;
   margin-top: 10px;
+  padding: 0px;
+  color: gray;
+  font-size: 16pt;
+
+}
+.longwidget h5 {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom:200px;
+
   padding: 0px;
   color: gray;
   font-size: 16pt;
