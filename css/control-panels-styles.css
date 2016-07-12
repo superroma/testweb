@@ -18,6 +18,10 @@ body {
   width: 95%;
   text-align: center;
 }
+
+#slightly-left {
+  margin-right: 10%;
+}
 .notification {
   border-style: solid;
   border-width: 1px;

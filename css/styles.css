@@ -67,9 +67,19 @@ body {
   border-width:1px;
 }
 
-.widget .glyphicon, .longwidget .glyphicon {
+#settings {
   color: black;
   margin-left: 95%;
+  margin-top: 2%;
+}
+
+#delete {
+  color:red;
+  margin-left: 95%;
+  margin-top: 65%;
+}
+.longwidget #delete {
+  margin-top: 12%;
 }
 
 .longwidget:hover, .widget:hover {
