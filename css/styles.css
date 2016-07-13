@@ -32,6 +32,9 @@ body {
   width: 100%;
   order: -1;
 }
+#title-input {
+  margin-left: -35px;
+}
 .no-show {
   display: none;
 }
