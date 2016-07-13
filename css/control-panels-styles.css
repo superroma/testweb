@@ -166,11 +166,11 @@ body {
 @media screen and (min-width: 1200px)
 {
   .panels, .bar {
-      margin-left: calc(50% - 140px * 4 );
+      margin-left: calc(50% - 604px);
 
   }
   .bar{
-    margin-right: calc(50% - 140px * 4);
+    margin-right: calc(50% - 604px);
   }
 }
 

@@ -4,6 +4,12 @@
   justify-content: flex-start;
 
 }
+.centered-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
 
 @font-face {
   font-family: 'Roboto'
@@ -25,8 +31,6 @@ body {
   flex-wrap: wrap;
   display: flex;
   margin-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .title {
   width: 100%;
