@@ -73,6 +73,7 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  width: 279px;
 
 }
 .danger-box {
@@ -131,10 +132,10 @@ body {
   }
   .panels, .bar {
     justify-content: flex-start;
-    margin-left: calc(50% - 140px * 2);
+    margin-left: calc(50% - 140px * 2 + 2.5px);
   }
   .bar{
-    margin-right: calc(50% - 140px * 2);
+    margin-right: calc(50% - 140px * 2 + 2.5px);
   }
   a.container {
     width: 49%;
@@ -153,24 +154,24 @@ body {
 
 }
 
-@media screen and (min-width: 950px)
+@media screen and (min-width: 980px)
 {
   .panels, .bar {
-      margin-left: calc(50% - 140px * 3);
+      margin-left: calc(50% - 142px * 3 + 2.5px);
 
   }
   .bar{
-    margin-right: calc(50% - 140px * 3);
+    margin-right: calc(50% - 142px * 3 + 2.5px);
   }
 }
-@media screen and (min-width: 1200px)
+@media screen and (min-width: 1280px)
 {
   .panels, .bar {
-      margin-left: calc(50% - 604px);
+      margin-left: calc(50% - 142px * 4 + 2.5px);
 
   }
   .bar{
-    margin-right: calc(50% - 604px);
+    margin-right: calc(50% - 142px * 4 + 2.5px);
   }
 }
 
