@@ -19,11 +19,14 @@ body {
 .content {
   margin-left: 5%;
   width: 90%;
+  di
 }
 .bar {
   flex-wrap: wrap;
   display: flex;
   margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title {
   width: 100%;
@@ -37,6 +40,7 @@ body {
 }
 .control-buttons {
   margin-left: auto;
+
 }
 .btn-primary, .btn-success {
   margin-bottom: 10px;
@@ -54,6 +58,10 @@ body {
   min-width:200px;
   flex-basis: content;
 
+}
+#control-panel {
+  margin-top: 30px;
+  text-align: center;
 }
 
 .longwidget {
@@ -188,7 +196,6 @@ color:gray;
   }
 }
 .widget:before {
-    content:'';
     float:left;
     padding-top:100%;
 }

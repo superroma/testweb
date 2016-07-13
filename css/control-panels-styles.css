@@ -129,9 +129,12 @@ body {
     justify-content: space-between;
 
   }
-  .panels {
+  .panels, .bar {
     justify-content: flex-start;
     margin-left: calc(50% - 140px * 2);
+  }
+  .bar{
+    margin-right: calc(50% - 140px * 2);
   }
   a.container {
     width: 49%;
@@ -152,16 +155,22 @@ body {
 
 @media screen and (min-width: 950px)
 {
-  .panels {
+  .panels, .bar {
       margin-left: calc(50% - 140px * 3);
 
+  }
+  .bar{
+    margin-right: calc(50% - 140px * 3);
   }
 }
 @media screen and (min-width: 1200px)
 {
-  .panels {
-      margin-left: calc(50% - 140px * 4);
+  .panels, .bar {
+      margin-left: calc(50% - 140px * 4 );
 
+  }
+  .bar{
+    margin-right: calc(50% - 140px * 4);
   }
 }
 
@@ -221,6 +230,7 @@ hr {
 .notification {
   margin-bottom: 20px;
 }
+
 .right-setting {
   visibility: hidden;
   margin-right: 20%;
