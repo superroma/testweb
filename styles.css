@@ -1,0 +1,252 @@
+.panels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+@font-face {
+  font-family: 'Roboto'
+  src: url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-left, margin-right: 30px;
+}
+.sidebar-left {
+  width: 5%;
+}
+.content {
+  margin-left: 5%;
+  width: 90%;
+  di
+}
+.bar {
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  width: 100%;
+  order: -1;
+}
+.no-show {
+  display: none;
+}
+.no-visible {
+    visibility: hidden;
+}
+.control-buttons {
+  margin-left: auto;
+
+}
+.btn-primary, .btn-success {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.btn-default {
+}
+.panel {
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom:5px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  min-width:200px;
+  flex-basis: content;
+
+}
+#control-panel {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.longwidget {
+  width: 300px;
+  text-align: left;
+  margin-bottom:5px;
+  border-style: solid;
+  border-color: #e2e2e2;
+  padding: 20px;
+  border-radius:5px;
+  border-width:1px;
+}
+
+#settings {
+  color: black;
+  margin-left: 95%;
+  margin-top: 2%;
+}
+
+#delete {
+  color:red;
+  margin-left: 95%;
+  margin-top: 65%;
+}
+.longwidget #delete {
+  margin-top: 12%;
+}
+
+
+.longwidget:hover, .widget:hover {
+  border-color: black;
+}
+.longwidget .form-control, .widget .form-control {
+  max-width: 200px;
+}
+.danger-box {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+.widget {
+  width: 300px;
+  height:300px;
+  margin-right: 5px;
+  margin-bottom:5px;
+  border-style: solid;
+  border-color: #e2e2e2;
+  border-radius:5px;
+  border-width:1px;
+  padding: 20px;
+}
+.widget h5 {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 0px;
+  color: gray;
+  font-size: 16pt;
+
+}
+.longwidget h5 {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom:200px;
+
+  padding: 0px;
+  color: gray;
+  font-size: 16pt;
+
+}
+.widget h4 {
+  margin-top: 5px;
+  font-size: 20pt;
+  margin-right: 20px;
+}
+.widget-head {
+  display: flex;
+  justify-content: space-between;
+}
+.widget-body {
+  margin-top: 20%;
+  text-align: center;
+}
+.widget-footer {
+  clear:both;
+  text-align: center;
+}
+.widget-footer p {
+  color:transparent;
+
+}
+.widget:hover .widget-footer p {
+color:gray;
+}
+.longwidget img {
+  margin-top: calc(15% - 70px);
+  margin-left: calc(100% - 50px);
+}
+.widget img {
+  margin-top: calc(150px);
+  margin-left: calc(240px);
+}
+.widget input {
+  margin-left:5%;
+  margin-right:5%;
+  width: 90%;
+}
+
+@media screen and (min-width: 680px) {
+  .title {
+    order:0;
+    width:auto;
+    margin-left: auto;
+  }
+  .longwidget, .bar {
+    width: 605px;
+
+  }
+}
+
+@media screen and (min-width: 1018px) {
+  .longwidget, .bar {
+    width: 910px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .longwidget, .bar {
+    width: 1215px;
+  }
+}
+.widget:before {
+    float:left;
+    padding-top:100%;
+}
+/* half height elements
+
+.smallwidget {
+  width: 100%;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom:5px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  border-radius:5px;
+  border-width:1px;
+
+}
+.fortwo {
+  width: 100%;
+  margin-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow:1;
+  max-height: 250px;
+}
+*/
+/* Typography */
+
+h1 {
+	font-weight: 300;
+  font-size: 20pt;
+	flex: 1;
+  text-align: center;
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 150px;
+}
+h4 {
+  font-size: 20;
+}
+h5 {
+  padding-top: 10%;
+  font-size: 20;
+	font-weight: 500;
+
+}
+
+h6 {
+	color: #666;
+	font-size: 14px;
+}
