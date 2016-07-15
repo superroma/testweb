@@ -97,6 +97,9 @@ body {
   width: 279px;
 
 }
+a.panel {
+  color: inherit;
+}
 .danger-box {
   border-style: solid;
   border-width: 1px;
@@ -107,10 +110,13 @@ body {
   margin-top: 20px;
 }
 .panel h5 {
+  margin-top: 10%;
   min-height: 3em;
+  font-size: 20pt;
 }
 .panel p {
     margin-top: auto;
+    color: rgba(0, 0, 0, 0.54);
 }
 .widgets {
   display: flex;
@@ -123,6 +129,17 @@ body {
 }
 .widgets p {
   width:100%
+}
+#green {
+}
+#yellow {
+  color: rgba(241,196,15,0.54);
+}
+#red {
+  color: rgba(231,76,60,0.54);
+}
+p.status {
+  margin-top: -25px;
 }
 .widget {
   display: flex;
