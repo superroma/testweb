@@ -131,6 +131,7 @@ a.panel {
   width:100%
 }
 #green {
+  color: rgba(46,204,113,0.54);
 }
 #yellow {
   color: rgba(241,196,15,0.54);
