@@ -54,6 +54,9 @@ body {
 #variables, #diagnostic {
   margin-top: 50px;
 }
+.data-unit {
+  margin-bottom: 20px;
+}
 .data-unit h6 {
   font-size: 12pt;
   color: rgba(0, 0, 0, 0.54);
@@ -62,11 +65,23 @@ body {
 .data-unit p {
   margin-bottom: 0px;
 }
+
 .content .data-unit p, h6 {
   margin-left: 0px;
   text-align: left;
 }
+.data-line {
+  display: flex;
+  flex-wrap: nowrap;
+}
 
+.data-line p {
+  margin-right: 10%;
+}
+.data-line h6 {
+  padding-top: 8px;
+  min-width: 100px;
+}
 /* Control Panels */
 .bar {
   flex-wrap: wrap;
@@ -140,7 +155,7 @@ a.panel {
   color: rgba(231,76,60,0.54);
 }
 p.status {
-  margin-top: -25px;
+  margin-top: -px;
 }
 .widget {
   display: flex;
