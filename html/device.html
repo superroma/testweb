@@ -37,7 +37,7 @@
       <button type="button" class="btn btn-primary">Back</button>
     </a>
       <div class="title">
-    <h1>Device settings</h1>
+    <h1>Sample Device</h1>
   </div>
     <div class="control-buttons">
       <a href="new-widget.html">
@@ -48,7 +48,14 @@
     </a>
     </div>
   </div>
-  <div class="widget-setting-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Settings
+    </div>
+    <div class="panel-body">
+      <div class="widget-setting-group">
+  <div class="widget-setting-category">
+  </div>
   <div class="widget-setting-label">
     <p>Name</p>
   </div>
@@ -57,94 +64,138 @@
   </div>
 </div>
 <div class="widget-setting-group">
-<div class="widget-setting-label">
+  <div class="widget-setting-category">
+  </div>
+  <div class="widget-setting-label">
   <p> Status</p>
 </div>
 <div class="widget-setting">
   <p>Connected</p>
   <p id="gray">2 minutes ago 192.168.1.10</p>
-
 </div>
 </div>
 <div class="widget-setting-group" >
+  <div class="widget-setting-category">
+  </div>
   <div class="widget-setting-label">
 <p>Device Token</p>
 </div>
 <div class="widget-setting">
 <p id="below"> d1b43970-8a0c-4a40-b569-126e346a5db3 </p>
-<a> Get Another</a>
-
+<button class="btn btn-default" id="token"> Get Another</button>
 </div>
 </div>
-<hr>
-<div class="widget-setting-group" id="variables">
-<div class="widget-setting-label">
-  <p>Variables</p>
 </div>
-<div class="widget-setting">
-    <div class="data-unit">
-      <p>Songs</p>
-      <div class="data-line">
-        <p>20</p>
-      <h6>5:30am 6/30</h6>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Variables</div>
+  <div class="panel-body">
+    <div class="widget-setting-group" id="variables">
+      <div class="widget-setting-category">
+      </div>
+    <div class="widget-setting-label">
+          <p class="editable">Songs</p>
+    </div>
+    <div class="widget-setting">
+        <div class="data-unit">
+            <p>20</p>
+          <h6>5:30am 6/30</h6>
+        </div>
     </div>
     </div>
-    <div class="data-unit">
-      <p>Temp</p>
-      <div class="data-line">
-        <p>22</p>
-      <h6>10:13am 7/11</h6>
-    </div>
-  </div>
-    <div class="data-unit">
-      <p>Distance</p>
-      <div class="data-line">
-        <p>36</p>
-      <h6>9:02am 7/10</h6>
-    </div>
-  </div>
-    <div class="data-unit">
-      <p>Wind Speed</p>
-      <div class="data-line">
-        <p>2</p>
-      <h6>1:33am 7/11</h6>
+    <div class="widget-setting-group">
+      <div class="widget-setting-category">
+      </div>
+      <div class="widget-setting-label">
+        <p class="editable">Temp</p>
+      </div>
+      <div class="widget-setting">
+        <div class="data-unit">
+            <p>22</p>
+          <h6>10:13am 7/11</h6>
+        </div>
     </div>
     </div>
+    <div class="widget-setting-group">
+      <div class="widget-setting-category">
+      </div>
+      <div class="widget-setting-label">
+        <p class="editable">Distance</p>
+      </div>
+      <div class="widget-setting">
+        <div class="data-unit">
+            <p>36</p>
+          <h6>9:02am 7/10</h6>
+        </div>
+    </div>
+    </div>
+    <div class="widget-setting-group">
+      <div class="widget-setting-category">
+      </div>
+      <div class="widget-setting-label">
+        <p class="editable">Wind Speed</p>
+      </div>
+      <div class="widget-setting">
+        <div class="data-unit">
+            <p>2</p>
+          <h6>1:33am 7/11</h6>
+        </div>
+    </div>
+    </div>
 </div>
-<div class="right-setting">
-    <p>Variables</p>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Diagnostic Information</div>
+  <div class="panel-body">
+    <div class="widget-setting-group">
+    <div class="widget-setting-category">
+    </div>
+    <div class="widget-setting-label">
+      <p>CPU</p>
+    </div>
+    <div class="widget-setting">
+      <div class="data-unit">
+        <p>24%</p>
+        <h6>10:33am 7/11</h6>
+      </div>
+    </div>
+    </div>
+    <div class="widget-setting-group">
+      <div class="widget-setting-category">
+      </div>
+      <div class="widget-setting-label">
+        <p>IP</p>
+      </div>
+      <div class="widget-setting">
+        <div class="data-unit">
+          <p>192.168.11.3</p>
+          <h6>1:33am 7/11</h6>
+        </div>
+    </div>
+    </div>
+    <div class="widget-setting-group">
+      <div class="widget-setting-category">
+      </div>
+      <div class="widget-setting-label">
+        <p>Hostname</p>
+      </div>
+      <div class="widget-setting">
+        <div class="data-unit">
+          <p>raspberrypi</p>
+          <h6>1:33am 7/11</h6>
+        </div>
+    </div>
+    </div>
 </div>
 </div>
-<hr>
-<div class="widget-setting-group" id="diagnostic">
-<div class="widget-setting-label">
-  <p>Diagnostic Information</p>
-</div>
-<div class="widget-setting">
-  <div class="data-unit">
-    <p>CPU: 24%</p>
-    <h6>10:33am 7/11</h6>
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    Delete device
   </div>
-  <div class="data-unit">
-    <p>IP: 192.168.11.3</p>
-    <h6>1:33am 7/11</h6>
-  </div>
-  <div class="data-unit">
-    <p>Wind Speed: 2</p>
-    <h6>1:33am 7/11</h6>
-  </div>
-  <div class="data-unit">
-    <p>Hostname: Raspberrypi</p>
-    <h6>1:33am 7/11</h6>
-  </div>
-</div>
-<div class="right-setting">
-    <p>Diagnostic Information</p>
-</div>
-</div>
-<div class="danger-box">
-  <p>Permamently delete this device</p>
+  <div class="panel-body">
+  <p>Permamently delete Sample Device</p>
   <button type="button" class="btn btn-danger">Delete</button>
+</div>
 </div>
 
 
