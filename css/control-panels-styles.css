@@ -52,7 +52,6 @@ body {
 /* Device*/
 
 #variables, #diagnostic {
-  margin-top: 50px;
 }
 .data-unit {
   margin-bottom: 20px;
@@ -82,6 +81,14 @@ body {
   padding-top: 8px;
   min-width: 100px;
 }
+.panel {
+
+    width: calc(142px * 8 + 5px);
+  margin-left: calc(50% - 142px * 4 + 2.5px);
+}
+.panel-body {
+  padding: 20px;
+}
 /* Control Panels */
 .bar {
   flex-wrap: wrap;
@@ -99,7 +106,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-.panel {
+.panel-tile {
   text-align: center;
   margin-right: 5px;
   margin-bottom:5px;
@@ -112,7 +119,7 @@ body {
   width: 279px;
 
 }
-a.panel {
+a.panel-tile {
   color: inherit;
 }
 .danger-box {
@@ -122,14 +129,16 @@ a.panel {
   border-radius: 5px;
   text-align: center;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 1px;
+  margin-left: calc(50% - 142px * 4 + 2.5px);
+  width: calc(142px * 8 + 5px);
 }
-.panel h5 {
+.panel-tile h5 {
   margin-top: 10%;
   min-height: 3em;
   font-size: 20pt;
 }
-.panel p {
+.panel-tile p {
     margin-top: auto;
     color: rgba(0, 0, 0, 0.54);
 }
@@ -245,21 +254,33 @@ p.status {
 .widget-setting-group {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 20px;
 }
 .left-setting {
   margin-left: 20%;
   visibility: hidden;
 }
+.widget-setting-category {
+  width: 15%;
+  color: rgba(0, 0, 0, 0.54);
+}
 .widget-setting-label {
   color: rgba(0, 0, 0, 0.54);
-  margin-left: 25%;
-  width: 15%;
+  margin-left: 10%;
+  width: 20%;
+}
+p.editable {
+  color: #34495e; 
+}
+
+#token {
+  margin-left: 240px;
 }
 #gray {
   margin-top: -25px;
     color: rgba(0, 0, 0, 0.54);
+    font-size: 12pt;
 }
+
 #below {
 
 margin-bottom: -5px;
