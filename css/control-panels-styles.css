@@ -96,6 +96,10 @@ body {
   justify-content: flex-end;
 
 }
+.bar a {
+  margin-bottom: 5px;
+
+}
 .no-show {
   display: none;
 }
@@ -269,11 +273,17 @@ p.status {
   width: 20%;
 }
 p.editable {
-  color: #34495e; 
+  color: #34495e;
 }
 
 #token {
-  margin-left: 240px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.54);
+  border-color: rgba(0, 0, 0, 0.54);
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+
 }
 #gray {
   margin-top: -25px;
