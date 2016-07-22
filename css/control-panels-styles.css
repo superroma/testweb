@@ -31,7 +31,6 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 30px auto;
 }
 
 .content {
@@ -196,7 +195,7 @@ p.status {
 
 /*Widget settings*/
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
  .input-group {
@@ -209,8 +208,8 @@ p.status {
 }
 .widget-setting-group {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .left-setting {
   margin-left: 20%;
@@ -220,41 +219,42 @@ p.status {
   width: 0%;
   color: rgba(0, 0, 0, 0.54);
 }
-.widget-setting-label {
-  color: rgba(0, 0, 0, 0.54);
-  width: 40%;
-}
+
 p.editable {
   color: #34495e;
 }
 .block-inline {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 50%;
+  margin-right: 0px;
 }
 .block-inline p {
-  margin-right: 0px;
-  width: 100%;
+  margin-bottom: -10px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .block-inline h6 {
   font-size: 12pt;
+  white-space: nowrap;
   color: rgba(0, 0, 0, 0.54);
-  margin-top: -20px;
-  width: 100%;
-  text-align: center;
+}
+.widget-setting a {
+  font-size: 12pt;
+  margin-top: -15px;
 
 }
 
+#docs {
+  margin-left: 10px;
+}
 
 #token {
-  background-color: transparent;
-  color: rgba(0, 0, 0, 0.54);
-  border-color: rgba(0, 0, 0, 0.54);
-  border-style: solid;
-  border-width: 1px;
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
-
+max-width: 60%;
+text-align: left;
+}
+#token p {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: 0px;
 }
 #gray {
   margin-top: -25px;
@@ -263,26 +263,29 @@ p.editable {
 }
 
 #below {
-
-margin-bottom: -5px;
-margin-right: 15px;
+width: 60%;
+white-space: nowrap;
+overflow: hidden;
 }
 
 .content .widget-setting-label p {
   text-align: center;
 }
 .widget-setting-label {
-  width: 100%;
   margin-bottom: -15px;
+  color: rgba(0, 0, 0, 0.54);
+  white-space: nowrap;
 }
 .widget-setting {
-  width: 100%;
   margin-bottom: 30px;
 
 }
 .content .widget-setting p {
-  text-align: center;
+  text-align: right;
   margin-left: 0px;
+}
+.content .widget-setting a {
+  text-align: left;
 }
 hr {
   margin-left: 25%;
@@ -395,11 +398,13 @@ h5 {
     width: 49%;
 
   }
-  .panel {
+  .panel, #panel-like  {
     margin-left: calc(50% - 140px * 2 + 2.5px);
     margin-right: calc(50% - 140px * 2 + 2.5px);
   }
-
+  #panel-like {
+    padding: 20px;
+  }
 
 
 
@@ -426,19 +431,16 @@ h5 {
   .bar{
     margin-right: calc(50% - 142px * 3 + 2.5px);
   }
-  .panel {
+  .panel, #panel-like  {
     margin-left: calc(50% - 142px * 3 + 2.5px);
     margin-right: calc(50% - 142px * 3 + 2.5px);
   }
-  .widget-setting-category {
-    width: 10%;
-  }
   .widget-setting-label {
-    margin-left: 10%;
-    width: 25%;
+    margin-left: 25%;
+    width: 30%;
   }
   .widget-setting {
-    width: 55%;
+    width: 45%;
   }
   .content .widget-setting-label p {
     text-align: left;
@@ -451,18 +453,6 @@ h5 {
     text-align: left;
     margin-left: 0px;
   }
-  .block-inline p {
-    margin-right: 15px;
-    text-align: left;
-    width: auto;
-  }
-  .block-inline h6 {
-    font-size: 12pt;
-    color: rgba(0, 0, 0, 0.54);
-    margin-top: 8px;
-    text-align: left;
-    width: 50%;
-}
 #token {
   margin-left: 0px;
 }
@@ -475,7 +465,7 @@ h5 {
   .bar {
     margin-right: calc(50% - 142px * 4 + 2.5px);
   }
-  .panel {
+  .panel, #panel-like {
     margin-left: calc(50% - 142px * 4 + 2.5px);
     margin-right: calc(50% - 142px * 4 + 2.5px);
   }
