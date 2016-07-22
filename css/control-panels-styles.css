@@ -253,13 +253,13 @@ p.editable {
 }
 
 #token {
-max-width: 60%;
+max-width: 65%;
 text-align: left;
 }
 #token p {
   white-space: nowrap;
-  overflow-x: hidden;
   margin-bottom: 0px;
+  font-size: 12pt;
 }
 #gray {
   margin-top: -25px;
