@@ -83,7 +83,12 @@ body {
   padding-top: 8px;
   min-width: 100px;
 }
-
+.content .panel-heading {
+  text-align: left;
+}
+.panel-heading {
+  padding-left: 25px;
+}
 .panel-body {
   padding: 20px;
 }
@@ -432,11 +437,11 @@ h5 {
     margin-right: calc(50% - 142px * 3 + 2.5px);
   }
   .panel, #panel-like  {
-    margin-left: calc(50% - 142px * 3 + 2.5px);
-    margin-right: calc(50% - 142px * 3 + 2.5px);
+    margin-left: 20%;
+    margin-right: 20%;
   }
   .widget-setting-label {
-    margin-left: 25%;
+    margin-left: 10%;
     width: 30%;
   }
   .widget-setting {
@@ -448,7 +453,9 @@ h5 {
   .widget-setting-group {
     flex-wrap: nowrap;
   }
-
+  .panel-heading {
+    padding-left: calc(20px + 10%);
+  }
   .content .widget-setting p {
     text-align: left;
     margin-left: 0px;
@@ -466,8 +473,8 @@ h5 {
     margin-right: calc(50% - 142px * 4 + 2.5px);
   }
   .panel, #panel-like {
-    margin-left: calc(50% - 142px * 4 + 2.5px);
-    margin-right: calc(50% - 142px * 4 + 2.5px);
+    margin-left: 25%;
+    margin-right: 25%;
   }
   .widget-setting {
     margin-left: 3%;
