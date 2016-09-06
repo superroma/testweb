@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cloud4RPI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Loading Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Loading Flat UI -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css" rel="stylesheet">
+    <link href="../css/control-panels-styles.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<body>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="#">Cloud4RPI</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="controlpanels.html">Control Panels</a></li>
+          <li class="active"><a href="devices.html">Devices</a></li>
+          <li><a href="#contact">Docs</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="profile.html">Anton Eremin</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="content">
+    <div class="bar">
+      <a href="devices.html">
+      <button type="button" class="btn btn-primary">Back</button>
+    </a>
+      <div class="title">
+    <h1>Sample Device</h1>
+  </div>
+    <div class="control-buttons">
+      <a href="new-widget.html">
+      <button type="button" class="btn btn-primary no-show">Add Widget</button>
+    </a>
+    <a href="edit-controlpanel.html"
+      <button type="button" class="btn btn-primary no-visible">Edit</button>
+    </a>
+    </div>
+  </div>
+  <div class="settings-block">
+  <div class="widget-setting-group">
+  <div class="widget-setting-category">
+    <p>Settings</p>
+  </div>
+  <div class="widget-setting-label">
+    <p>Name</p>
+  </div>
+  <div class="widget-setting">
+    <p>My First Device</p>
+  </div>
+</div>
+<div class="widget-setting-group">
+<div class="widget-setting-category">
+</div>
+<div class="widget-setting-label">
+  <p> Status</p>
+</div>
+<div class="widget-setting">
+  <p>Connected</p>
+  <p id="gray">2 minutes ago 192.168.1.10</p>
+</div>
+</div>
+<div class="widget-setting-group" >
+  <div class="widget-setting-category">
+  </div>
+  <div class="widget-setting-label">
+<p>Device Token</p>
+</div>
+<div class="widget-setting">
+<p id="below"> d1b43970-8a0c-4a40-b569-126e346a5db3 </p>
+<button class="btn btn-primary" id="token"> Get Another</button>
+</div>
+</div>
+</div>
+<div class="settings-block">
+<div class="widget-setting-group" id="variables">
+  <div class="widget-setting-category">
+    <p>Variables</p>
+  </div>
+<div class="widget-setting-label">
+      <p>Songs</p>
+</div>
+<div class="widget-setting">
+    <div class="data-unit">
+        <p>20</p>
+      <h6>5:30am 6/30</h6>
+    </div>
+</div>
+</div>
+  <div class="widget-setting-group">
+    <div class="widget-setting-category">
+    </div>
+    <div class="widget-setting-label">
+      <p>Temp</p>
+    </div>
+    <div class="widget-setting">
+      <div class="data-unit">
+          <p>22</p>
+        <h6>10:13am 7/11</h6>
+      </div>
+  </div>
+</div>
+<div class="widget-setting-group">
+  <div class="widget-setting-category">
+  </div>
+  <div class="widget-setting-label">
+    <p>Distance</p>
+  </div>
+  <div class="widget-setting">
+    <div class="data-unit">
+        <p>36</p>
+      <h6>9:02am 7/10</h6>
+    </div>
+</div>
+</div>
+<div class="widget-setting-group">
+  <div class="widget-setting-category">
+  </div>
+  <div class="widget-setting-label">
+    <p>Wind Speed</p>
+  </div>
+  <div class="widget-setting">
+    <div class="data-unit">
+        <p>2</p>
+      <h6>1:33am 7/11</h6>
+    </div>
+</div>
+</div>
+</div>
+<div class="settings-block">
+<div class="widget-setting-group" id="diagnostic">
+<div class="widget-setting-category">
+  <p>Diagnostic Information</p>
+</div>
+<div class="widget-setting-label">
+  <p>CPU</p>
+</div>
+<div class="widget-setting">
+  <div class="data-unit">
+    <p>24%</p>
+    <h6>10:33am 7/11</h6>
+  </div>
+</div>
+</div>
+<div class="widget-setting-group">
+  <div class="widget-setting-category">
+  </div>
+  <div class="widget-setting-label">
+    <p>IP</p>
+  </div>
+  <div class="widget-setting">
+    <div class="data-unit">
+      <p>192.168.11.3</p>
+      <h6>1:33am 7/11</h6>
+    </div>
+</div>
+</div>
+<div class="widget-setting-group">
+  <div class="widget-setting-category">
+  </div>
+  <div class="widget-setting-label">
+    <p>Hostname</p>
+  </div>
+  <div class="widget-setting">
+    <div class="data-unit">
+      <p>raspberrypi</p>
+      <h6>1:33am 7/11</h6>
+    </div>
+</div>
+</div>
+
+</div>
+<div class="danger-box">
+  <p>Permamently delete Sample Device</p>
+  <button type="button" class="btn btn-danger">Delete</button>
+</div>
+
+
+
+  </div>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.js"></script>

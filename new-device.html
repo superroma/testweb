@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cloud4RPI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Loading Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Loading Flat UI -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css" rel="stylesheet">
+    <link href="../css/control-panels-styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<body>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="landing.html">Cloud4RPI</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="controlpanels.html">Control Panels</a></li>
+          <li class="active"><a href="devices.html">Devices</a></li>
+          <li><a href="#contact">Docs</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="profile.html">Anton Eremin</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="content">
+    <div class="bar">
+      <a href="controlpanels.html">
+      <button type="button" class="btn btn-primary">Back</button>
+    </a>
+      <div class="title">
+    <h1>Add Device</h1>
+  </div>
+    <div class="control-buttons">
+      <a href="new-device.html">
+      <button type="button" class="btn btn-primary no-show">New Device</button>
+    </a>
+    <a href="edit-devices.html"
+      <button type="button" class="btn btn-primary no-visible">Edit</button>
+    </a>
+    </div>
+  </div>
+<div class="settings">
+    <div class="widget-setting-group">
+    <div class="widget-setting-label">
+      <p> Device name</p>
+    </div>
+    <div class="widget-setting">
+      <input class="form-control">
+    </div>
+    <div class="right-setting">
+        <p> Device name</p>
+    </div>
+  </div>
+<p> Not connected </p>
+  <div class="widget-setting-group">
+    <div class="widget-setting-label">
+  <p>Device Token</p>
+</div>
+<div class="widget-setting">
+  <p> d1b43970-8a0c-4a40-b569-126e346a5db3 </p>
+
+</div>
+<div class="right-setting-show">
+      <button type="button" class="btn btn-primary">Get another</button>
+</div>
+</div>
+<div class="text">
+  <p> To connect a new device, you can get Cloud4RPI client library on one of the following platforms: </p>
+  <a href="#" >Raspberry Pi (Python)</a>
+  <p>Check out <a href ="#">API Docs</a> for general information on how to set up an interaction with our server.</p>
+  <a href="new-device-connected.html">[when device connects, user is taken further]</a>
+</div>
+
+
+  </div>
+  </div>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.js"></script>

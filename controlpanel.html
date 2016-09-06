@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample Control Panel</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Loading Flat UI -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css" rel="stylesheet">
+    <!-- Loading bootstrap-switch -->
+    <link href="../bootstrap-switch/bootstrap-switch.css" rel="stylesheet">
+      <link href="../bootstrap-slider/bootstrap-slider.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+      <script src="../bootstrap-switch/bootstrap-switch.js" ></script>
+      <script src="../bootstrap-slider/bootstrap-slider.js" ></script>
+
+<body>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="#">Cloud4RPI</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="controlpanels.html">Control Panels</a></li>
+          <li><a href="devices.html">Devices</a></li>
+          <li><a href="#contact">Docs</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="profile.html">Anton Eremin</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+    <div class="content">
+    <div class="bar">
+      <a href="controlpanels.html">
+      <button type="button" class="btn btn-primary no-visible">Back</button>
+    </a>
+      <div class="title">
+    <h1>Sample control panel</h1>
+  </div>
+    <div class="control-buttons">
+      <a href="new-widget.html">
+      <button type="button" class="btn btn-primary no-show">Add Widget</button>
+    </a>
+    <a href="edit-controlpanel.html"
+      <button type="button" class="btn btn-primary">Edit</button>
+    </a>
+    </div>
+  </div>
+    <div class="panels">
+      <a href="#" class="longwidget">
+        <h5>Wind Speed</h5>
+        <div class="widget-footer">
+          <p> 4:25pm 6/20</p>
+        </div>
+      </a>
+      <a href="#" class="widget">
+        <h5>Gauge</h5>
+        <div class="widget-footer">
+          <p> 4:25pm 6/20</p>
+        </div>
+      </a>
+      <a href="#" class="widget">
+        <div class="widget-head">
+        <h5>String</h5>
+        <h4 id="string_value">run</h4>
+      </div>
+      <div class="widget-body">
+      <input class="form-control">
+
+    </div>
+    <div class="widget-footer">
+      <p> 4:25pm 6/20</p>
+    </div>
+      </a>
+      <a href="#" class="widget">
+        <div class="widget-head">
+        <h5>Slider</h5>
+        <h4 id="slider_value">45</h4>
+      </div>
+      <div class="widget-body">
+      <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-value="45"/>
+      <script type="text/javascript">
+      $('#ex1').slider({
+formatter: function(value) {
+  $('#ex1').on('slide',function () {
+    document.getElementById("slider_value").style.fontSize = "20pt";
+    document.getElementById("slider_value").style.color = "#e2e2e2"
+    document.getElementById("slider_value").textContent =    value;
+    setTimeout(function() {
+      document.getElementById("slider_value").style.fontSize = "20pt";
+      document.getElementById("slider_value").style.color = "#16a085"
+      document.getElementById("slider_value").textContent = value;
+  }, 2000);
+
+
+});
+
+  return 'Current value: ' + value;
+}
+});
+
+</script>
+    </div>
+    <div class="widget-footer">
+      <p> 4:25pm 6/20</p>
+    </div>
+      </a>
+      <a href="#" class="widget">
+        <h5>Number</h5>
+      </a>
+      <a href="#" class="widget">
+        <div class="widget-head">
+        <h5>Switch</h5>
+        <h4 id="switch_value">On</h4>
+      </div>
+      <div class="widget-body">
+      <input type="checkbox" id="checkbox-toggle" name="my-checkbox" checked>
+      <script type="text/javascript">
+        $("[name='my-checkbox']").bootstrapSwitch();
+        $("[name='my-checkbox']").click(function() {
+          if($("[name='my-checkbox']").is(":checked")){
+            $("#status").html("sending: Correct");
+            console.log("On");
+          } else {
+            $("#status").html("sending: Incorrect");
+          }
+        });
+
+      </script>
+    </div>
+    <div class="widget-footer">
+      <p>4:25pm 6/20</p>
+    </div>
+      </a>
+      <a href="#" class="widget">
+        <div class="widget-head">
+        <h5>Button</h5>
+        <h4>3h</h4>
+      </div>
+      <div class="widget-body">
+        <button class="btn btn-primary">PLAY SOUND</button>
+      </div>
+      <div class="widget-footer">
+        <p>4:25pm 6/20</p>
+      </div>
+      </a>
+    </div>
+  </div>
+</body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script><!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.js"></script>
