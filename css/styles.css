@@ -58,8 +58,8 @@ body {
   margin-bottom:5px;
   border-style: solid;
   border-color: black;
-  padding: 20px;
   min-width:200px;
+  padding-bottom: 10px;
   flex-basis: content;
 
 }
@@ -267,4 +267,9 @@ h5 {
 h6 {
 	color: #666;
 	font-size: 14px;
+}
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
 }

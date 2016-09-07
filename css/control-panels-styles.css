@@ -87,10 +87,10 @@ body {
   text-align: left;
 }
 .panel-heading {
-  padding-left: 25px;
+  padding-left: 10px;
 }
 .panel-body {
-  padding: 20px;
+  padding: 10px;
 }
 /* Control Panels */
 .bar {
@@ -381,10 +381,13 @@ h5 {
 
 }
 .content p {
-  text-align: center;
-  margin-left: 5px;
+  text-align: left;
+  margin-left: 10px;
 }
-
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 /* Media Queries */
 
 @media screen and (min-width: 680px) {
