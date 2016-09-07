@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Control Panels</title>
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
-
+    <title>Control panels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Loading Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Loading Flat UI -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css" rel="stylesheet">
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/control-panels-styles.css" rel="stylesheet">
+
 <body>
   <div class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
@@ -17,7 +17,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
         </button>
-        <a class="navbar-brand" href="#">Cloud4RPI</a>
+        <a class="navbar-brand" href="landing.html">Cloud4RPI</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -26,35 +26,33 @@
           <li><a href="#contact">Docs</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li ><a href="./">Login</a></li>
-          <li><a href="../navbar-fixed-top/">Register</a></li>
+          <li ><a href="profile.html">Anton Eremin</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
     <div class="content">
-    <div class="bar">
-      <a href="controlpanels.html">
-      <button type="button" class="btn btn-primary no-show">Back</button>
-    </a>
-      <div class="title">
-    <h1>Sample control panel</h1>
-  </div>
-    <div class="control-buttons">
-      <a href="edit-controlpanel-first-widget.html">
-      <button type="button" class="btn btn-primary">Add Widget</button>
-    </a>
-    <a href="edit-controlpanel-delete.html">
-    <button type="button" class="btn btn-danger">Delete Control Panel</button>
-  </a>
-    <a href="controlpanel.html">
-      <button type="button" class="btn btn-success">Done Editing</button>
-    </a>
+      <div class="bar">
+        <a href="controlpanels.html">
+        <button type="button" class="btn btn-primary no-show">Back</button>
+      </a>
+        <div class="title">
+      <h1>Control Panels</h1>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <p style="text-align:left;"> Try adding new widget! You can also rename and delete your control panel in this mode.</p>
-  </div>
+      <div class="control-buttons">
+        <a href="new-control-panel.html">
+        <button type="button" class="btn btn-primary "> New Control Panel</button>
+      </a>
+      <a href="edit-controlpanels.html">
+        <button type="button" class="btn btn-primary no-show">Edit</button>
+      </a>
+      </div>
+    </div>
+    <div class="panel panel-default" style="text-align:left; display: flex; margin-right:6%; margin-left:6%;">
+      <p style="width:300px;"> Sample control panel is deleted.</p>
+      <a style="margin-top:5px;" href="edit-controlpanel-empty.html">Undo</a>
+    </div>
+
   </div>
 </body>
 
@@ -63,3 +61,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.js"></script>
+
+<script src="../js/control-panels.js"></script>
