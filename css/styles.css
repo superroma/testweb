@@ -46,7 +46,7 @@ body {
   margin-left: auto;
 
 }
-.btn-primary, .btn-success {
+.btn-primary, .btn-success, .btn-danger, .btn-default, .btn-disable {
   margin-bottom: 10px;
   margin-right: 5px;
 }
